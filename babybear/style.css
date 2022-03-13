@@ -33,8 +33,10 @@ p {
 	border-style: solid;
 	border-color: black;
 	border-radius: 50%;
-	height: 380px;
-	width: 380px;
+	height: 70%;
+	width: 70%;
+	top: 5%;
+	left: 5%;
 	background-color:chocolate;
 }
 
@@ -122,18 +124,32 @@ p {
 	right: 20%;
 	clip-path: polygon(1% 51%, 1% 51%, 17% 55%, 17% 55%, 33% 57%, 33% 57%, 46% 59%, 46% 59%, 61% 55%, 61% 55%, 69% 52%, 69% 52%, 85% 46%, 85% 49%, 94% 43%, 94% 43%, 99% 37%, 99% 37%, 99% 61%, 99% 61%, 86% 66%, 86% 66%, 70% 70%, 70% 70%, 60% 73%, 60% 73%, 44% 76%, 44% 79%, 32% 76%, 32% 76%, 17% 74%, 17% 74%, 2% 69%, 2% 69%);
 }
-1
-/* .ear {
+
+.ear {
 	border-width: 4px;
 	border-style: solid;
 	border-color: black;
 	border-radius: 50%;
-	height: 60px;
-	width: 60px;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
+	width: 18%;
+	aspect-ratio: 1;
 	background-color:chocolate;
+}
 
-} */
+.left-ear {
+	left: 10%;
+}
+
+.right-ear {
+	left: 52%;
+}
+
+.inner-ear {
+	border-radius: 50%;
+	width: 55%;
+	aspect-ratio: 1;
+	background-color: pink;
+	top: 25%;
+	left: 27%;
+}
+
+
