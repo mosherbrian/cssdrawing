@@ -1,4 +1,139 @@
-h1 {
+
+p {
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1em;
 }
+
+.cartoon {
+	width: 90vmin;
+	aspect-ratio: 1;
+	background: #f002;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cartoon *,
+.cartoon *::before,
+.cartoon *::after {
+	position:absolute;
+	box-sizing: border-box;
+}
+
+.cartoon *:hover {
+	background-color: cyan;
+	border-style: dashed;
+	border-width: 1px;
+	border-radius: 0;
+}
+
+.head {
+	border-width: 4px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 50%;
+	height: 380px;
+	width: 380px;
+	background-color:chocolate;
+}
+
+.eyes {
+	background-color: black;
+	border-radius: 50%;
+	width: 15%;
+	height: 20%;
+	position: absolute;
+	top: 20%;
+}
+
+.left_eye {
+	left: 25%;
+}
+
+.right_eye {
+	right: 25%;
+}
+
+.pupils {
+	background-color: white;
+	position: absolute;
+	top: 25%;
+	border-radius: 50%;
+	width: 30%;
+	aspect-ratio: 1;
+	left: 25%;
+}
+
+.snout {
+	background-color: white;
+	border-style: solid;
+	width: 60%;
+	height: 45%;
+	border-radius:50%;
+	position: absolute;
+	top: 45%;
+	left: 20%;
+}
+
+.nose {
+	border-radius: 50% 50% 50% 50% / 27% 27% 73% 73% ;
+	background-color: black;
+	width: 34%;
+	height: 34%;
+	position: absolute;
+	top: 20%;
+	left: 33%;
+}
+
+.nose-tip {
+	background-color: white;
+	position: absolute;
+	top: 15%;
+	border-radius: 50%;
+	width: 34%;
+	height: 15%;
+	left: 33%;
+}
+
+.vertical {
+	background-color: black;
+	width: 2%;
+	height: 18%;
+	position: absolute;
+	top: 54%;
+	left: 49%;
+}
+
+.grin {
+	background-color: black;
+	width: 30%;
+	height: 15%;
+	position: absolute;
+	top: 66%;
+}
+
+.left-grin {
+	left: 21%;
+	clip-path: polygon(1% 51%, 1% 51%, 17% 55%, 17% 55%, 33% 57%, 33% 57%, 46% 59%, 46% 59%, 61% 55%, 61% 55%, 69% 52%, 69% 52%, 85% 46%, 85% 49%, 94% 43%, 94% 43%, 99% 37%, 99% 37%, 99% 61%, 99% 61%, 86% 66%, 86% 66%, 70% 70%, 70% 70%, 60% 73%, 60% 73%, 44% 76%, 44% 79%, 32% 76%, 32% 76%, 17% 74%, 17% 74%, 2% 69%, 2% 69%);
+}
+
+.right-grin {
+	right: 20%;
+	clip-path: polygon(1% 51%, 1% 51%, 17% 55%, 17% 55%, 33% 57%, 33% 57%, 46% 59%, 46% 59%, 61% 55%, 61% 55%, 69% 52%, 69% 52%, 85% 46%, 85% 49%, 94% 43%, 94% 43%, 99% 37%, 99% 37%, 99% 61%, 99% 61%, 86% 66%, 86% 66%, 70% 70%, 70% 70%, 60% 73%, 60% 73%, 44% 76%, 44% 79%, 32% 76%, 32% 76%, 17% 74%, 17% 74%, 2% 69%, 2% 69%);
+}
+1
+/* .ear {
+	border-width: 4px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	background-color:chocolate;
+
+} */
