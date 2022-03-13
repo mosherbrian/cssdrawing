@@ -1,7 +1,7 @@
 
 p {
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 .cartoon {
@@ -35,8 +35,9 @@ p {
 	border-radius: 50%;
 	height: 70%;
 	width: 70%;
-	top: 5%;
-	left: 5%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
 	background-color:chocolate;
 }
 
@@ -100,7 +101,7 @@ p {
 
 .vertical {
 	background-color: black;
-	width: 2%;
+	width: 3%;
 	height: 18%;
 	position: absolute;
 	top: 54%;
@@ -113,16 +114,12 @@ p {
 	height: 15%;
 	position: absolute;
 	top: 66%;
-}
-
-.left-grin {
+	clip-path: polygon(1% 23%, 11% 45%, 36% 68%, 52% 68%, 66% 64%, 75% 48%, 88% 29%, 95% 19%, 96% 36%, 90% 53%, 81% 69%, 71% 80%, 53% 85%, 36% 86%, 17% 77%, 9% 64%, 0% 54%);
 	left: 21%;
-	clip-path: polygon(1% 51%, 1% 51%, 17% 55%, 17% 55%, 33% 57%, 33% 57%, 46% 59%, 46% 59%, 61% 55%, 61% 55%, 69% 52%, 69% 52%, 85% 46%, 85% 49%, 94% 43%, 94% 43%, 99% 37%, 99% 37%, 99% 61%, 99% 61%, 86% 66%, 86% 66%, 70% 70%, 70% 70%, 60% 73%, 60% 73%, 44% 76%, 44% 79%, 32% 76%, 32% 76%, 17% 74%, 17% 74%, 2% 69%, 2% 69%);
 }
 
-.right-grin {
-	right: 20%;
-	clip-path: polygon(1% 51%, 1% 51%, 17% 55%, 17% 55%, 33% 57%, 33% 57%, 46% 59%, 46% 59%, 61% 55%, 61% 55%, 69% 52%, 69% 52%, 85% 46%, 85% 49%, 94% 43%, 94% 43%, 99% 37%, 99% 37%, 99% 61%, 99% 61%, 86% 66%, 86% 66%, 70% 70%, 70% 70%, 60% 73%, 60% 73%, 44% 76%, 44% 79%, 32% 76%, 32% 76%, 17% 74%, 17% 74%, 2% 69%, 2% 69%);
+.grin + .grin {
+	transform: scaleX(-1) translate(-96%, 0);
 }
 
 .ear {
@@ -131,16 +128,18 @@ p {
 	border-color: black;
 	border-radius: 50%;
 	width: 18%;
+	left: 50%;
+	top: 50%;
 	aspect-ratio: 1;
 	background-color:chocolate;
 }
 
 .left-ear {
-	left: 10%;
+	transform: translate(-160%, -230%);
 }
 
 .right-ear {
-	left: 52%;
+	transform: translate(60%, -230%);
 }
 
 .inner-ear {
