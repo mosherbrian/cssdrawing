@@ -12,7 +12,7 @@ img {
 	width: 120%;
 	height: 120%;
 	transform: translate(-8.74%, -8.74%);
-	opacity: 100%;
+	opacity: 20%;
 	border: solid 3px black;
 }
 
@@ -38,7 +38,7 @@ img {
 	box-sizing: border-box;
 }
 
-.flower {
+.frame {
 	background: black;
 	width: 90%;
 	height: 90%;
@@ -50,11 +50,10 @@ img {
 
 .inner-background {
 	background: white;
-	opacity: 90%;
-	width: 90%;
-	height: 90%;
+	width: 94%;
+	height: 94%;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(.945) ;
+	transform: translate(-50%, -50%);
 	clip-path: polygon(var(--hexagon-path)); 
 }
