@@ -1,5 +1,23 @@
 body {
-	--hexagon-path: 50% 12.5%, 80% 31.5%, 80% 68.5%, 50% 87.5%, 20% 68.5%, 20% 31.5%;
+	--hexagon-path:
+		/* outside path */ 
+		50% 12.5%, /* outer-top */ 
+		20% 31.5%, /* top-left */
+		20% 68.5%, /* bottom-left */ 
+		50% 87.5%, /* bottom */ 
+		80% 68.5%, /* bottom-right */ 
+		80% 31.5%, /* top-right */ 	
+		50% 12.5%, /* back to outer-top */ 
+
+		/* inside path */ 
+		50% 15%, /* inner-top */ 
+		78% 32.7%, /* top-right */ 
+		78% 67.2%, /* bottom-right */ 
+		50% 85%, /* bottom */ 
+		22% 67.2%, /* bottom-left */ 
+		22% 32.7%, /* top-left */
+		50% 15%; /* back to inner-top */ 
+
 }
 
 p {
@@ -9,10 +27,12 @@ p {
 
 img {
 	/* 153px 164px (93%) */
-	width: 120%;
-	height: 120%;
-	transform: translate(-8.74%, -8.74%);
-	opacity: 100%;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: scale(1.08);
+	opacity: 30%;
 	border: solid 3px black;
 }
 
@@ -38,7 +58,8 @@ img {
 	box-sizing: border-box;
 }
 
-.flower {
+.frame {
+	opacity: 100%;
 	background: black;
 	width: 90%;
 	height: 90%;
@@ -48,13 +69,13 @@ img {
 	clip-path: polygon(var(--hexagon-path)); 
 }
 
-.inner-background {
-	background: white;
-	opacity: 90%;
-	width: 90%;
-	height: 90%;
-	top: 50%;
+.bloom {
+	--dimensions: 31%;
+	background: black;
+	width: var(--dimensions);
+	height: var(--dimensions);
+	top: 41%;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(.945) ;
+	transform: translate(-50%, -50%);
 	clip-path: polygon(var(--hexagon-path)); 
 }
