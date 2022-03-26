@@ -1,0 +1,60 @@
+body {
+	--hexagon-path: 50% 12.5%, 80% 31.5%, 80% 68.5%, 50% 87.5%, 20% 68.5%, 20% 31.5%;
+}
+
+p {
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1rem;
+}
+
+img {
+	/* 153px 164px (93%) */
+	width: 120%;
+	height: 120%;
+	transform: translate(-8.74%, -8.74%);
+	opacity: 100%;
+	border: solid 3px black;
+}
+
+.canvas {
+	width: 90vmin;
+	aspect-ratio: 1;
+	--gradient: #0004 0 0.125%, #0000 0 9.875%, #0004 0 10%;
+	background: 
+		repeating-linear-gradient(var(--gradient)),
+		repeating-linear-gradient(to right, var(--gradient)) 
+		;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.canvas div,
+.canvas div::before,
+.canvas div::after {
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+}
+
+.flower {
+	background: black;
+	width: 90%;
+	height: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	clip-path: polygon(var(--hexagon-path)); 
+}
+
+.inner-background {
+	background: white;
+	opacity: 90%;
+	width: 90%;
+	height: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(.945) ;
+	clip-path: polygon(var(--hexagon-path)); 
+}
