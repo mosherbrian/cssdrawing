@@ -26,14 +26,13 @@ p {
 }
 
 img {
-	/* 153px 164px (93%) */
 	width: 100%;
 	height: 100%;
 	top: 50%;
 	left: 50%;
-	transform: scale(1.08);
 	opacity: 30%;
-	border: solid 3px black;
+	transform: scale(1.2);	
+
 }
 
 .canvas {
@@ -59,10 +58,20 @@ img {
 }
 
 .frame {
+	/* opacity: 100%; */
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: solid red 5px;
+}
+
+.frameborder {
 	opacity: 100%;
 	background: black;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -70,12 +79,38 @@ img {
 }
 
 .bloom {
-	--dimensions: 31%;
+	--dimensions: 100%;
+	--bloom-path:
+		50% 78.54%,
+		50.22% 64.16%,
+		55.75% 64.82%,
+		63.94% 59.96%,
+		66.59% 53.98%,
+		59.73% 52.88%,
+		51.77% 57.74%,
+		50% 61.28%,
+		50.22% 53.54%,
+		60.4% 47.57%,
+		60.4% 34.96%,
+		49.56% 28.76%,
+		38.72% 35.18%,
+		38.72% 47.57%,
+		48.89% 53.54%,
+		48.89% 66.37%,
+		47.35% 62.83%,
+		39.38% 58.19%,
+		32.96% 58.85%,
+		35.4% 64.82%,
+		43.14% 69.47%,
+		48.67% 68.81%,
+		48.89% 79.42%,
+		50% 78.54%
+		;
 	background: black;
 	width: var(--dimensions);
 	height: var(--dimensions);
-	top: 41%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	clip-path: polygon(var(--hexagon-path)); 
+	clip-path: polygon(var(--bloom-path)); 
 }
